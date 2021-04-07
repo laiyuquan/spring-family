@@ -25,9 +25,6 @@ public class Demo0318Application implements CommandLineRunner {
     @Autowired
     private FooDao fooDao;
 
-    @Autowired
-    private BatchInsert batchInsert;
-
 
     public static void main(String[] args) {
         SpringApplication.run(Demo0318Application.class, args);
@@ -49,7 +46,7 @@ public class Demo0318Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws  Exception{
-        log.info(dataSource.getConnection().toString());
+        //log.info(dataSource.getConnection().toString());
 
        // fooDao.insertData();
 
